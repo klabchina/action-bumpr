@@ -1,7 +1,7 @@
 FROM alpine:3.14
 
 # ENV BUMP_VERSION=v1.1.0
-
+ENV OWNER=klabchina
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
 RUN apk --no-cache add git git-lfs jq grep curl
