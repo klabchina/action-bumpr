@@ -123,6 +123,8 @@ fi
 
 CURRENT_VERSION="$(bump current)" || true
 NEXT_VERSION="$(bump ${BUMP_LEVEL})" || true
+echo "current_version=${CURRENT_VERSION}"
+echo "next_version=${NEXT_VERSION}"
 
 # Set next version tag in case existing tags not found.
 if [ -z "${NEXT_VERSION}" ] && [ -z "$(git tag)" ]; then
